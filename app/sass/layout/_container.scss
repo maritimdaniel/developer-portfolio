@@ -1,0 +1,13 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  .flex {
+    display: flex;
+  }
+  .center {
+    align-items: center;
+  }
+  .sb {
+    justify-content: space-between;
+  }
+}
