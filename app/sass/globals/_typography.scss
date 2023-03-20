@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Prata", serif !important;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li:last-child {
+  margin-right: 0;
+}
