@@ -1,0 +1,10 @@
+footer {
+  background: #31323a;
+  padding: 1rem 0;
+  .logo {
+    color: white;
+  }
+  img:not(img:last-child) {
+    margin-right: 0.8rem;
+  }
+}

@@ -166,4 +166,15 @@ main .cta h1 {
 }
 main .cta p {
   margin-bottom: 2rem;
+}
+
+footer {
+  background: #31323a;
+  padding: 1rem 0;
+}
+footer .logo {
+  color: white;
+}
+footer img:not(img:last-child) {
+  margin-right: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
