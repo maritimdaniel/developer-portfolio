@@ -145,6 +145,10 @@ main .experience {
   position: relative;
   background: #31323a;
 }
+main .experience h1 {
+  font-weight: 500;
+  font-size: 2rem;
+}
 main .experience p:not(p:last-child) {
   margin-bottom: 1rem;
 }
@@ -160,4 +164,12 @@ main .experience::before {
 }
 main .experience::before {
   left: -100%;
+}
+
+main .cta h1 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+main .cta p {
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */
