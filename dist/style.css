@@ -112,6 +112,9 @@ header nav ul li a:hover {
 main {
   margin-top: 10rem;
 }
+main section:not(.summary, .companies) {
+  padding: 4rem 0;
+}
 main .card {
   max-width: 520px;
 }
@@ -125,7 +128,7 @@ main .summary h1 {
 }
 
 main .companies {
-  margin: 4rem 0;
+  margin-top: 4rem;
 }
 
 main .projects img {
@@ -136,4 +139,25 @@ main .projects img {
 main .projects h1 {
   font-weight: 500;
   font-size: 2rem;
+}
+
+main .experience {
+  position: relative;
+  background: #31323a;
+}
+main .experience p:not(p:last-child) {
+  margin-bottom: 1rem;
+}
+main .experience::after,
+main .experience::before {
+  content: "";
+  background: #31323a;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -100%;
+  overflow: hidden;
+}
+main .experience::before {
+  left: -100%;
 }/*# sourceMappingURL=style.css.map */
