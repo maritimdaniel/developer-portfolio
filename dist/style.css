@@ -112,6 +112,9 @@ header nav ul li a:hover {
 main {
   margin-top: 10rem;
 }
+main .card {
+  max-width: 520px;
+}
 
 main .summary {
   max-width: 600px;
@@ -122,5 +125,15 @@ main .summary h1 {
 }
 
 main .companies {
-  margin: 3rem 0;
+  margin: 4rem 0;
+}
+
+main .projects img {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  width: 100%;
+}
+main .projects h1 {
+  font-weight: 500;
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
