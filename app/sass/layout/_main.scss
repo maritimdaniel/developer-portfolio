@@ -1,10 +1,27 @@
+@use "../utils/" as u;
+
 main {
   padding-top: 2rem;
   section:not(.summary, .companies) {
     padding: 4rem 0;
+    @include u.breakpoint("500") {
+      padding: 2.5rem 0;
+    }
   }
   .card {
     max-width: 520px;
+  }
+  .card:not(.card:last-child) {
+    padding-right: 1rem;
+  }
+  h1 {
+    margin-bottom: 1rem;
+    @include u.breakpoint("500") {
+      font-size: 2rem !important;
+    }
+  }
+  @include u.breakpoint("500") {
+    padding-top: 0;
   }
 }
 
@@ -15,12 +32,23 @@ main {
       font-size: 2.6rem;
       font-weight: 500;
     }
+    @include u.breakpoint("800") {
+      max-width: 100%;
+    }
   }
 }
 
 main {
   .companies {
     margin-top: 4rem;
+    @include u.breakpoint("800") {
+      flex-wrap: wrap;
+      justify-content: center !important;
+      img {
+        margin-right: 0.5rem;
+        margin-bottom: 0.8rem;
+      }
+    }
   }
 }
 
@@ -35,6 +63,16 @@ main {
       font-weight: 500;
       font-size: 2rem;
     }
+    @include u.breakpoint("800") {
+      flex-direction: column;
+      .project {
+        max-width: 100%;
+      }
+      .project:first-child {
+        margin-bottom: 3rem;
+        padding: 0;
+      }
+    }
   }
 }
 main {
@@ -48,6 +86,16 @@ main {
     p:not(p:last-child) {
       margin-bottom: 1rem;
     }
+    @include u.breakpoint("800") {
+      flex-direction: column;
+      padding: 0 1rem;
+      .card {
+        max-width: 100%;
+      }
+      .card:first-child {
+        margin-bottom: 3rem;
+      }
+    }
   }
   .experience::after,
   .experience::before {
@@ -58,6 +106,9 @@ main {
     position: absolute;
     right: -100%;
     overflow: hidden;
+    @include u.breakpoint("800") {
+      top: 0;
+    }
   }
   .experience::before {
     left: -100%;
@@ -71,7 +122,7 @@ main {
       font-size: 2rem;
     }
     p {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
   }
 }
