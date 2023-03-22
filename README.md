@@ -6,7 +6,7 @@
 
 Visit the live website hosted on netlify.
 
-- [Portfolio website](https://codewellblog.netlify.app/)
+- [Portfolio website](https://codewelldeveloperportfolio.netlify.app/)
 
 ## Tech Stack
 
