@@ -1,9 +1,16 @@
+@use "../utils/" as u;
 header {
   padding: 2.5em 0;
   width: 100%;
 }
 
 header {
+  .hamburger {
+    display: none;
+    @include u.breakpoint("800") {
+      display: block;
+    }
+  }
   nav {
     ul {
       li {
@@ -12,6 +19,41 @@ header {
           color: white;
         }
       }
+      .navigation__btn--mobile {
+        display: none;
+      }
     }
+    @include u.breakpoint("800") {
+      position: fixed;
+      width: 200px;
+      background: rgb(27, 27, 27);
+      z-index: 999;
+      top: 12%;
+      right: 10%;
+      border-radius: 5px;
+
+      ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 1.5rem 0;
+        li {
+          margin-bottom: 1rem;
+        }
+        .navigation__btn--mobile {
+          display: block;
+        }
+      }
+    }
+  }
+  @include u.breakpoint("800") {
+    .navigation__btn {
+      display: none;
+    }
+  }
+}
+
+header {
+  .active {
+    display: block !important;
   }
 }

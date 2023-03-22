@@ -1,28 +1,13 @@
-window.addEventListener("scroll", () => {
-  const header = document.querySelector(".header");
-  header.classList.toggle("sticky", window.scrollY > 0);
-});
+console.log(window.innerWidth);
+console.log(document.documentElement.clientWidth);
+console.log(window.pageXOffset);
+if (window.innerWidth < 801) {
+  const navigation = document.querySelector(".navigation");
+  const menuBtn = document.querySelector(".hamburger");
 
-const cookie = document.querySelector(".cookie");
-const cookieBtns = document.querySelectorAll(".cookie-btn");
-const mobilemenu = document.querySelector(".mobile-navigation");
-const menuBtn = document.querySelector(".menu-icon");
-const closeBtn = document.querySelector(".close-icon");
-
-cookieBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    cookie.style.display = "none";
+  navigation.style.display = "none";
+  menuBtn.addEventListener("click", () => {
+    console.log(navigation.classList);
+    navigation.classList.toggle("active");
   });
-});
-
-menuBtn.addEventListener("click", () => {
-  mobilemenu.style.display = "block";
-  menuBtn.style.display = "none";
-  closeBtn.style.display = "block";
-});
-
-closeBtn.addEventListener("click", () => {
-  mobilemenu.style.display = "none";
-  menuBtn.style.display = "block";
-  closeBtn.style.display = "none";
-});
+}
